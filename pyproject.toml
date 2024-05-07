@@ -11,7 +11,8 @@ pendulum = "^3.0.0"
 pandas = "^2.2.2"
 matplotlib = "^3.8.4"
 requests = "^2.31.0"
-
+jupyterlab = { version = '*', optional = true }
+notebook = { version = '*', optional = true }
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.2.0"
@@ -21,6 +22,9 @@ optional = true
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.6.0"
+
+[tool.poetry.extras]
+jupyter = ['jupyterlab', 'notebook']
 
 [build-system]
 requires = ["poetry-core"]
