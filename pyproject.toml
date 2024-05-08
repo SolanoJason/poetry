@@ -14,6 +14,7 @@ requests = "^2.31.0"
 jupyterlab = { version = '*', optional = true }
 notebook = { version = '*', optional = true }
 psycopg2 = { version = "*", optional = true }
+django = "*"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.2.0"
