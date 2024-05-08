@@ -13,6 +13,7 @@ matplotlib = "^3.8.4"
 requests = "^2.31.0"
 jupyterlab = { version = '*', optional = true }
 notebook = { version = '*', optional = true }
+psycopg2 = { version = "*", optional = true }
 
 [tool.poetry.group.test.dependencies]
 pytest = "^8.2.0"
@@ -25,6 +26,7 @@ mkdocs = "^1.6.0"
 
 [tool.poetry.extras]
 jupyter = ['jupyterlab', 'notebook']
+pgsql = ['psycopg2']
 
 [build-system]
 requires = ["poetry-core"]
